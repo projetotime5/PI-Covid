@@ -1,3 +1,4 @@
+/* Paletas de Cores */
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -10,8 +11,6 @@
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
     --primary: #007bff;
     --secondary: #6c757d;
     --success: #28a745;
@@ -39,11 +38,25 @@ iframe{
     border: none;
 }
 
+.rodape{
+    background-color: #202124; 
+    margin-bottom: 0;
+}
+
+.github-time{
+    color: white;
+}
+.github-time:hover{
+    color: white;
+}
+
+
 /* Configuração Equipe */
 .github-equipe{
     color: #343a40;
 }
 
 .github-equipe:hover{
-    color: #343a40;
+    color: #202124;
 }
+
