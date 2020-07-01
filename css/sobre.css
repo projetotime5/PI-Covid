@@ -26,6 +26,19 @@
 /* Configuração Geral */
 html, body{
     overflow-x: hidden;
+    background-color: white;
+}
+
+strong{
+    color: #343a40;
+}
+
+.navbar{
+    background-color: #202124
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
 }
 
 .logo,
@@ -33,20 +46,31 @@ html, body{
     font-weight: bold;
 }
 
-iframe{
-    align-items: center;
-    margin: 3%;
-    border: none;
-}
-
 .card{
     border: 0px;
 }
 
+/* Configuração imagem sobre prevenção */
+.img-fluid{
+    width: 90%;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
 
+.videoapoio{
+    text-align: center;
+}
+
+iframe{
+    margin-bottom: 3%;
+}
+
+/* Configuração do Rodapé */
 .rodape{
     background-color: #202124; 
     margin-bottom: 0;
+    color: white;
+    font-weight: bold;
 }
 
 .github-time{

@@ -13,11 +13,11 @@
     <link href="img/icon-site.png" rel="shortcut icon">
   </head>
 
-  <body style="background-color: white">
+  <body>
 
     <!-- INICIO MENU -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #202124;">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <img src="img/corona3.gif" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
         <!-- <a class="logo navbar-brand" href="#"> COVID-19 INFO</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -46,9 +46,17 @@
 
 
     <main>
-      <h1 class="pt-5 text-center mb-4 mt-5" style="color: #343a40; font-weight: bold;"><i class="fas fa-sort-amount-up"></i> Números por UF</h1>
+      <h2 class="pt-5 text-left text-dark m-4 mt-5"><i class="fas fa-map-marked-alt"></i> Números por UF:</h2>
+
+      <form>
+        <div class="form-row">
+          <div class="col m-3">
+            <input type="text" class="form-control" placeholder="Procure por um Estado">
+          </div>
+        </div>
+      </form>
       <!-- Início da Tabela de Estados -->
-      <table class="table table-striped table-dark p-1 col-12" style="border-radius: 2px; width: 97vw; margin: 1vw;">
+      <table class="table table-striped table-muted p-1 col-12">
         <thead>
           <tr>
             <th scope="col"><i class="fas fa-flag"></i> Estado</th>
@@ -225,6 +233,7 @@
 
     <!-- Inicio Mapa de Contágio -->
     <section>
+      
       <iframe src="https://covid19br.wcota.me/map/index.htm" id="map" frameborder="0" allowfullscreen width="94%" height="600px"></iframe>
     </section>
     <!-- Fim Mapa de Contágio -->
@@ -232,8 +241,8 @@
 
     <!-- INICIO DO RODAPE -->
     <footer class="rodape p-3">
-      <p class="text-light text-center m-0" style="font-weight: bold;">Github: <a href="https://github.com/projetotime5" target="_blank" class="github-time"><i class="fab fa-github"></i></a></p>
-      <p class="text-light text-center m-0" id="relogio" style="color: white; font-weight: bold;"></p>
+      <p class="text-light text-center m-0">Github: <a href="https://github.com/projetotime5" target="_blank" class="github-time"><i class="fab fa-github"></i></a></p>
+      <p class="text-light text-center m-0" id="relogio"></p>
     </footer>
     <!-- FIM DO RODAPE -->
 

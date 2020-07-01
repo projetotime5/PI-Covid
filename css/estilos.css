@@ -25,8 +25,16 @@
 /* Configuração Geral */
 html, body{
     overflow-x: hidden;
+    background-color: white;
 }
 
+.navbar{
+    background-color: #202124
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
 .logo,
 .nav-item{
     font-weight: bold;
@@ -36,27 +44,46 @@ iframe{
     align-items: center;
     margin: 3%;
     border: none;
+    width: 94%;
+    height: 600px;
 }
 
+/* Configuração da tabela UF */
+.table{
+    border: 1px solid #DCDCDC;
+    border-radius: 2px; 
+    width: 97vw; 
+    margin: 1vw;
+
+}
+
+form{
+    width: 70vw;
+}
+
+
+/* Configuração do Rodapé */
 .rodape{
     background-color: #202124; 
     margin-bottom: 0;
+    color: white;
+    font-weight: bold;
 }
 
+.equipe{
+    color: #343a40;
+}
+
+.equipe:hover{
+    color: #202124;
+}
+
+
+
+/* Configuração do Github Pessoal */
 .github-time{
     color: white;
 }
 .github-time:hover{
     color: white;
 }
-
-
-/* Configuração Equipe */
-.github-equipe{
-    color: #343a40;
-}
-
-.github-equipe:hover{
-    color: #202124;
-}
-

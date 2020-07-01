@@ -13,11 +13,11 @@
     <link href="img/icon-site.png" rel="shortcut icon">
   </head>
 
-  <body style="background-color: white">
+  <body>
 
     <!-- INICIO MENU -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #202124;">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <img src="img/corona3.gif" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
         <!-- <a class="logo navbar-brand" href="#"> COVID-19 INFO</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -46,7 +46,7 @@
 
     <!-- Inicio Dados Mundo -->
     <main>
-      <h1 class="pt-5 text-center text-dark mb-4 mt-5" style="font-weight: bold;"><i class="fas fa-globe-europe"></i> Dados Mundo</h1>
+      <h1 class="pt-5 text-center text-dark mb-4 mt-5"><i class="fas fa-globe-europe"></i> Dados Mundo</h1>
       <div class="row justify-content-center" style="font-weight: bold;">
         <div class="card-mundo card text-white bg-info m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
           <div class="card-header"><i class="fas fa-users"></i> Casos Confirmados</div>
@@ -73,10 +73,12 @@
           </div>
         </div>
       </div>
+      <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"></iframe>
+      <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?tab=map"></iframe>
       <!-- Fim Dados Mundo -->
 
       <!-- Inicio Dados Brasil -->
-      <h1 class="pt-5 text-center text-dark mb-4" style="font-weight: bold;"><i class="fas fa-globe-americas"></i> Dados Brasil</h1>
+      <h1 class="pt-5 text-center text-dark mb-4"><i class="fas fa-globe-americas"></i> Dados Brasil</h1>
       <div class="row justify-content-center" style="font-weight: bold;">
         <div class="card text-white bg-info m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
           <div class="card-header"><i class="fas fa-users"></i> Casos Confirmados</div>
@@ -103,20 +105,17 @@
           </div>
         </div>
       </div>
+      <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&region=SouthAmerica"></iframe>
+      <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?tab=map&region=SouthAmerica"></iframe>
     </main>
     <!-- Fim Dados Brasil -->
 
-    <!-- Inicio Mapa de Contágio -->
-    <section>
-      <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="94%" height="600px"></iframe>
-    </section>
-    <!-- Fim Mapa de Contágio -->
 
 
     <!-- INICIO DO RODAPE -->
     <footer class="rodape p-3">
-      <p class="text-light text-center m-0" style="font-weight: bold;">Github: <a href="https://github.com/projetotime5" target="_blank" class="github-time"><i class="fab fa-github"></i></a></p>
-      <p class="text-light text-center m-0" id="relogio" style="color: white; font-weight: bold;"></p>
+      <p class="text-light text-center m-0">Github: <a href="https://github.com/projetotime5" target="_blank" class="github-time"><i class="fab fa-github"></i></a></p>
+      <p class="text-light text-center m-0" id="relogio"></p>
     </footer>
     <!-- FIM DO RODAPE -->
 
