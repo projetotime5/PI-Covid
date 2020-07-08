@@ -70,6 +70,11 @@ iframe{
     margin-bottom: 3%;
 }
 
+
+.card-img-top:hover{
+    transform: scale(1.1);
+    
+}
 /* Configuração do Rodapé */
 .rodape{
     background-color: #202124; 

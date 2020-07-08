@@ -14,12 +14,10 @@
   </head>
 
   <body>
-
     <!-- INICIO MENU -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <img src="img/corona3.gif" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
-        <!-- <a class="logo navbar-brand" href="#"> COVID-19 INFO</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,87 +33,94 @@
             <li class="nav-item">
               <a class="nav-link" href="sobre.html"><i class="fas fa-virus"></i> Sobre COVID-19</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="noticias.html"><i class="far fa-newspaper"></i> Notícias</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="equipe.html"><i class="fas fa-user-friends"></i> Equipe</a>
             </li>
+            
           </ul>
         </div>
       </nav>
     </header>
     <!-- FIM MENU -->
 
-    <!-- Inicio Dados Mundo -->
     <main>
-      <h1 class="pt-5 text-left text-dark m-5"><i class="fas fa-globe-europe"></i> Dados Mundo:</h1>
-      <div class="row justify-content-center" style="font-weight: bold;">
-        <div class="card-mundo card text-white bg-info m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-users"></i> Casos Confirmados</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
+      <!-- Início Dados Brasil -->
+      <section>
+        <h2 class="pt-5 text-left text-dark m-5"><i class="fas fa-globe-americas"></i> Dados Brasil:</h2>
+        <div class="row justify-content-center" style="font-weight: bold;">
+          <div class="card text-white bg-info m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-users"></i> Casos Confirmados</div>
+            <div class="card-body">
+              <p class="card-text" id="confirmedBRA"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-success m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-child"></i> Casos Recuperados</div>
+            <div class="card-body">
+              <p class="card-text" id="recoveredBRA"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-warning m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-procedures"></i> Casos Ativos</div>
+            <div class="card-body">
+              <p class="card-text" id="activeBRA"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-danger m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-bed"></i> Óbitos</div>
+            <div class="card-body">
+              <p class="card-text" id="deathsBRA"></p>
+            </div>
           </div>
         </div>
-        <div class="card text-white bg-success m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-child"></i> Casos Recuperados</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
+        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&region=SouthAmerica"></iframe>
+        <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?tab=map&region=SouthAmerica"></iframe>
+      </section>
+      <!-- Fim Dados Brasil -->
+
+      <!-- Início Dados Mundo -->
+      <section>
+        <h2 class="pt-5 text-left text-dark ml-5 mr-5 mb-5"><i class="fas fa-globe-europe"></i> Dados Mundo:</h2>
+        <span id="updated"></span>
+        <div class="row justify-content-center" style="font-weight: bold;">
+          <div class="card text-white bg-info m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-users"></i> Casos Confirmados</div>
+            <div class="card-body">
+              <p class="card-text" id="confirmed"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-success m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-child"></i> Casos Recuperados</div>
+            <div class="card-body">
+              <p class="card-text" id="recovered"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-warning m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-procedures"></i> Casos Ativos</div>
+            <div class="card-body">
+              <p class="card-text" id="active"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-danger m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
+            <div class="card-header"><i class="fas fa-bed"></i> Óbitos</div>
+            <div class="card-body">
+              <p class="card-text" id="deaths"></p>
+            </div>
           </div>
         </div>
-        <div class="card text-white bg-warning m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-procedures"></i> Casos Ativos</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
-          </div>
-        </div>
-        <div class="card text-white bg-danger m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-bed"></i> Óbitos</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
-          </div>
-        </div>
-      </div>
-      <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"></iframe>
-      <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?tab=map"></iframe>
+          <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map"></iframe>
+          <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?tab=map"></iframe>
+      </section>  
       <!-- Fim Dados Mundo -->
-
-      <!-- Inicio Dados Brasil -->
-      <h1 class="pt-5 text-left text-dark m-5"><i class="fas fa-globe-americas"></i> Dados Brasil:</h1>
-      <div class="row justify-content-center" style="font-weight: bold;">
-        <div class="card text-white bg-info m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-users"></i> Casos Confirmados</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
-          </div>
-        </div>
-        <div class="card text-white bg-success m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-child"></i> Casos Recuperados</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
-          </div>
-        </div>
-        <div class="card text-white bg-warning m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-procedures"></i> Casos Ativos</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
-          </div>
-        </div>
-        <div class="card text-white bg-danger m-2 col-12 col-md-4 col-lg-4 col-xl-4" style="max-width: 18rem;">
-          <div class="card-header"><i class="fas fa-bed"></i> Óbitos</div>
-          <div class="card-body">
-            <p class="card-text">...</p>
-          </div>
-        </div>
-      </div>
-      <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&region=SouthAmerica"></iframe>
-      <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?tab=map&region=SouthAmerica"></iframe>
     </main>
-    <!-- Fim Dados Brasil -->
-
-
-
+    
     <!-- INICIO DO RODAPE -->
     <footer class="rodape p-3">
       <p class="text-light text-center m-0">Github: <a href="https://github.com/projetotime5" target="_blank" class="github-time"><i class="fab fa-github"></i></a></p>
-      <p class="text-light text-center m-0" id="relogio"></p>
+      <p class="text-light text-center m-0">Dados atualizados em: <span id="atualizacao"></span></p>
     </footer>
     <!-- FIM DO RODAPE -->
 
@@ -131,7 +136,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
-      <!-- JS -->
-
+    <!-- JS -->
   </body>
 </html>
